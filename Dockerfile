@@ -16,6 +16,7 @@ WORKDIR /app
 # 빌더 이미지에서 jar 파일만 복사
 COPY --from=builder /build/build/libs/springboot-jpa-exercise-0.0.1-SNAPSHOT.jar .
 
+
 EXPOSE 8080
 
 # root 대신 nobody 권한으로 실행
